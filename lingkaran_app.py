@@ -395,23 +395,23 @@ yang berjarak sama dari suatu titik tetap yang disebut
 
 # ==================== 1. LUAS LINGKARAN ====================
 elif st.session_state.current_slide == 'luas':
-    st.markdown('<h2 class="component-title">📐 1. Luas Lingkaran</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="component-title" style="color:#000000;">📐 1. Luas Lingkaran</h2>', unsafe_allow_html=True)
     
     col1, col2 = st.columns([1, 1])
     
     with col1:
         st.markdown("""
         <div class="formula-box">
-            <h4>📖 Rumus Luas Lingkaran:</h4>
+            <h4 style="color:#000000;">📖 Rumus Luas Lingkaran:</h4>
             <h3 style="text-align: center; color: #1565C0;">
                 L = π × r²
             </h3>
-            <p>atau</p>
+            <p style="color:#000000;">atau</p>
             <h3 style="text-align: center; color: #1565C0;">
                 L = π × (d/2)²
             </h3>
-            <p><strong>Keterangan:</strong></p>
-            <ul>
+            <p style="color:#000000;"><strong>Keterangan:</strong></p>
+            <ul style="color:#000000;">
                 <li><strong>L</strong> = Luas lingkaran</li>
                 <li><strong>π</strong> = 3.14 atau 22/7</li>
                 <li><strong>r</strong> = Jari-jari lingkaran</li>
@@ -431,11 +431,11 @@ elif st.session_state.current_slide == 'luas':
                 luas = math.pi * r**2
                 st.markdown(f"""
                 <div class="result-box">
-                    <h4>✅ Hasil Perhitungan:</h4>
-                    <p>L = π × r²</p>
-                    <p>L = {math.pi:.5f} × {r}²</p>
-                    <p>L = {math.pi:.5f} × {r**2}</p>
-                    <h3>L = {luas:.2f} satuan luas</h3>
+                    <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                    <p style="color:#000000;">L = π × r²</p>
+                    <p style="color:#000000;">L = {math.pi:.5f} × {r}²</p>
+                    <p style="color:#000000;">L = {math.pi:.5f} × {r**2}</p>
+                    <h3 style="color:#000000;">L = {luas:.2f} satuan luas</h3>
                 </div>
                 """, unsafe_allow_html=True)
                 st.pyplot(draw_circle_area(r))
@@ -446,11 +446,11 @@ elif st.session_state.current_slide == 'luas':
                 luas = math.pi * r**2
                 st.markdown(f"""
                 <div class="result-box">
-                    <h4>✅ Hasil Perhitungan:</h4>
-                    <p>L = π × (d/2)²</p>
-                    <p>L = {math.pi:.5f} × ({d}/2)²</p>
-                    <p>L = {math.pi:.5f} × {r}²</p>
-                    <h3>L = {luas:.2f} satuan luas</h3>
+                    <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                    <p style="color:#000000;">L = π × (d/2)²</p>
+                    <p style="color:#000000;">L = {math.pi:.5f} × ({d}/2)²</p>
+                    <p style="color:#000000;">L = {math.pi:.5f} × {r}²</p>
+                    <h3 style="color:#000000;">L = {luas:.2f} satuan luas</h3>
                 </div>
                 """, unsafe_allow_html=True)
                 st.pyplot(draw_circle_area(r))
@@ -473,27 +473,27 @@ elif st.session_state.current_slide == 'luas':
 
 # ==================== 2. KELILING LINGKARAN ====================
 elif st.session_state.current_slide == 'keliling':
-    st.markdown('<h2 class="component-title">🔄 2. Keliling Lingkaran</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="component-title" style="color:#000000;">🔄 2. Keliling Lingkaran</h2>', unsafe_allow_html=True)
     
     col1, col2 = st.columns([1, 1])
     
     with col1:
         st.markdown("""
         <div class="formula-box">
-            <h4>📖 Rumus Keliling Lingkaran:</h4>
+            <h4 style="color:#000000;">📖 Rumus Keliling Lingkaran:</h4>
             <h3 style="text-align: center; color: #1565C0;">
                 K = 2 × π × r
             </h3>
-            <p>atau</p>
+            <p style="color:#000000;">atau</p>
             <h3 style="text-align: center; color: #1565C0;">
                 K = π × d
             </h3>
-            <p><strong>Keterangan:</strong></p>
+            <p style="color:#000000;"><strong>Keterangan:</strong></p>
             <ul>
-                <li><strong>K</strong> = Keliling lingkaran</li>
-                <li><strong>π</strong> = 3.14 atau 22/7</li>
-                <li><strong>r</strong> = Jari-jari lingkaran</li>
-                <li><strong>d</strong> = Diameter lingkaran</li>
+                <li style="color:#000000;"><strong>K</strong> = Keliling lingkaran</li>
+                <li style="color:#000000;"><strong>π</strong> = 3.14 atau 22/7</li>
+                <li style="color:#000000;"><strong>r</strong> = Jari-jari lingkaran</li>
+                <li style="color:#000000;"><strong>d</strong> = Diameter lingkaran</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
@@ -509,10 +509,10 @@ elif st.session_state.current_slide == 'keliling':
                 keliling = 2 * math.pi * r
                 st.markdown(f"""
                 <div class="result-box">
-                    <h4>✅ Hasil Perhitungan:</h4>
-                    <p>K = 2 × π × r</p>
-                    <p>K = 2 × {math.pi:.5f} × {r}</p>
-                    <h3>K = {keliling:.2f} satuan panjang</h3>
+                    <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                    <p style="color:#000000;">K = 2 × π × r</p>
+                    <p style="color:#000000;">K = 2 × {math.pi:.5f} × {r}</p>
+                    <h3 style="color:#000000;">K = {keliling:.2f} satuan panjang</h3>
                 </div>
                 """, unsafe_allow_html=True)
                 st.pyplot(draw_circle_circumference(r))
@@ -522,10 +522,10 @@ elif st.session_state.current_slide == 'keliling':
                 keliling = math.pi * d
                 st.markdown(f"""
                 <div class="result-box">
-                    <h4>✅ Hasil Perhitungan:</h4>
-                    <p>K = π × d</p>
-                    <p>K = {math.pi:.5f} × {d}</p>
-                    <h3>K = {keliling:.2f} satuan panjang</h3>
+                    <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                    <p style="color:#000000;">K = π × d</p>
+                    <p style="color:#000000;">K = {math.pi:.5f} × {d}</p>
+                    <h3 style="color:#000000;">K = {keliling:.2f} satuan panjang</h3>
                 </div>
                 """, unsafe_allow_html=True)
                 st.pyplot(draw_circle_circumference(d/2))
@@ -552,35 +552,35 @@ elif st.session_state.current_slide == 'keliling':
 
 # ==================== 3. JURING LINGKARAN ====================
 elif st.session_state.current_slide == 'juring':
-    st.markdown('<h2 class="component-title">🍕 3. Juring Lingkaran</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="component-title" style="color:#000000;">🍕 3. Juring Lingkaran</h2>', unsafe_allow_html=True)
     
     col1, col2 = st.columns([1, 1])
     
     with col1:
         st.markdown("""
         <div class="formula-box">
-            <h4>📖 Rumus Juring Lingkaran:</h4>
+            <h4 style="color:#000000;">📖 Rumus Juring Lingkaran:</h4>
             <h3 style="text-align: center; color: #1565C0;">
                 Luas Juring = (θ/360°) × π × r²
             </h3>
-            <p>atau</p>
+            <p style="color:#000000;">atau</p>
             <h3 style="text-align: center; color: #1565C0;">
                 Luas Juring = (θ/360°) × Luas Lingkaran
             </h3>
-            <p><strong>Keterangan:</strong></p>
+            <p style="color:#000000;"><strong>Keterangan:</strong></p>
             <ul>
-                <li><strong>Luas Juring</strong> = Luas sektor/juring lingkaran</li>
-                <li><strong>θ (theta)</strong> = Sudut pusat dalam derajat</li>
-                <li><strong>r</strong> = Jari-jari lingkaran</li>
-                <li><strong>π</strong> = 3.14 atau 22/7</li>
+                <li style="color:#000000;"><strong>Luas Juring</strong> = Luas sektor/juring lingkaran</li>
+                <li style="color:#000000;"><strong>θ (theta)</strong> = Sudut pusat dalam derajat</li>
+                <li style="color:#000000;"><strong>r</strong> = Jari-jari lingkaran</li>
+                <li style="color:#000000;"><strong>π</strong> = 3.14 atau 22/7</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
         
         st.markdown("""
         <div class="info-box">
-            <h4>💡 Penjelasan:</h4>
-            <p><strong>Juring</strong> adalah daerah yang dibatasi oleh dua jari-jari dan busur lingkaran yang menghubungkan ujung-ujung jari-jari tersebut.</p>
+            <h4 style="color:#000000;">💡 Penjelasan:</h4>
+            <p style="color:#000000;"><strong>Juring</strong> adalah daerah yang dibatasi oleh dua jari-jari dan busur lingkaran yang menghubungkan ujung-ujung jari-jari tersebut.</p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -595,14 +595,14 @@ elif st.session_state.current_slide == 'juring':
             luas_lingkaran = math.pi * r**2
             st.markdown(f"""
             <div class="result-box">
-                <h4>✅ Hasil Perhitungan:</h4>
-                <p>Luas Juring = (θ/360°) × π × r²</p>
-                <p>Luas Juring = ({theta}/360) × {math.pi:.5f} × {r}²</p>
-                <p>Luas Juring = {(theta/360):.4f} × {luas_lingkaran:.2f}</p>
-                <h3>Luas Juring = {luas_juring:.2f} satuan luas</h3>
+                <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                <p style="color:#000000;">Luas Juring = (θ/360°) × π × r²</p>
+                <p style="color:#000000;">Luas Juring = ({theta}/360) × {math.pi:.5f} × {r}²</p>
+                <p style="color:#000000;">Luas Juring = {(theta/360):.4f} × {luas_lingkaran:.2f}</p>
+                <h3 style="color:#000000;">Luas Juring = {luas_juring:.2f} satuan luas</h3>
                 <hr>
-                <p><strong>Luas Lingkaran Penuh:</strong> {luas_lingkaran:.2f}</p>
-                <p><strong>Perbandingan:</strong> {theta}/360 = {(theta/360)*100:.1f}% dari lingkaran penuh</p>
+                <p style="color:#000000;"><strong>Luas Lingkaran Penuh:</strong> {luas_lingkaran:.2f}</p>
+                <p style="color:#000000;"><strong>Perbandingan:</strong> {theta}/360 = {(theta/360)*100:.1f}% dari lingkaran penuh</p>
             </div>
             """, unsafe_allow_html=True)
             st.pyplot(draw_juring(r, theta))
@@ -629,36 +629,36 @@ elif st.session_state.current_slide == 'juring':
 
 # ==================== 4. TEMBERENG LINGKARAN ====================
 elif st.session_state.current_slide == 'tembereng':
-    st.markdown('<h2 class="component-title">🎯 4. Tembereng Lingkaran</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="component-title" style="color:#000000;">🎯 4. Tembereng Lingkaran</h2>', unsafe_allow_html=True)
     
     col1, col2 = st.columns([1, 1])
     
     with col1:
         st.markdown("""
         <div class="formula-box">
-            <h4>📖 Rumus Tembereng Lingkaran:</h4>
+            <h4 style="color:#000000;">📖 Rumus Tembereng Lingkaran:</h4>
             <h3 style="text-align: center; color: #1565C0;">
                 Luas Tembereng = Luas Juring - Luas Segitiga
             </h3>
-            <p>atau</p>
+            <p style="color:#000000;">atau</p>
             <h3 style="text-align: center; color: #1565C0;">
                 L = (θ/360°) × π × r² - ½ × r² × sin(θ)
             </h3>
-            <p><strong>Keterangan:</strong></p>
+            <p style="color:#000000;"><strong>Keterangan:</strong></p>
             <ul>
-                <li><strong>L</strong> = Luas tembereng</li>
-                <li><strong>θ</strong> = Sudut pusat dalam derajat</li>
-                <li><strong>r</strong> = Jari-jari lingkaran</li>
-                <li><strong>Luas Juring</strong> = (θ/360°) × π × r²</li>
-                <li><strong>Luas Segitiga</strong> = ½ × r² × sin(θ)</li>
+                <li style="color:#000000;"><strong>L</strong> = Luas tembereng</li>
+                <li style="color:#000000;"><strong>θ</strong> = Sudut pusat dalam derajat</li>
+                <li style="color:#000000;"><strong>r</strong> = Jari-jari lingkaran</li>
+                <li style="color:#000000;"><strong>Luas Juring</strong> = (θ/360°) × π × r²</li>
+                <li style="color:#000000;"><strong>Luas Segitiga</strong> = ½ × r² × sin(θ)</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
         
         st.markdown("""
         <div class="info-box">
-            <h4>💡 Penjelasan:</h4>
-            <p><strong>Tembereng</strong> adalah daerah yang dibatasi oleh busur lingkaran dan tali busur yang menghubungkan ujung-ujung busur tersebut.</p>
+            <h4 style="color:#000000;">💡 Penjelasan:</h4>
+            <p style="color:#000000;"><strong>Tembereng</strong> adalah daerah yang dibatasi oleh busur lingkaran dan tali busur yang menghubungkan ujung-ujung busur tersebut.</p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -676,17 +676,17 @@ elif st.session_state.current_slide == 'tembereng':
             
             st.markdown(f"""
             <div class="result-box">
-                <h4>✅ Hasil Perhitungan:</h4>
-                <p><strong>Langkah 1:</strong> Hitung Luas Juring</p>
-                <p>Luas Juring = ({theta}/360) × π × {r}² = {luas_juring:.2f}</p>
+                <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                <p style="color:#000000;"><strong>Langkah 1:</strong> Hitung Luas Juring</p>
+                <p style="color:#000000;">Luas Juring = ({theta}/360) × π × {r}² = {luas_juring:.2f}</p>
                 <br>
-                <p><strong>Langkah 2:</strong> Hitung Luas Segitiga</p>
-                <p>Luas Segitiga = ½ × {r}² × sin({theta}°)</p>
-                <p>Luas Segitiga = ½ × {r**2} × {math.sin(theta_rad):.4f} = {luas_segitiga:.2f}</p>
+                <p style="color:#000000;"><strong>Langkah 2:</strong> Hitung Luas Segitiga</p>
+                <p style="color:#000000;">Luas Segitiga = ½ × {r}² × sin({theta}°)</p>
+                <p style="color:#000000;">Luas Segitiga = ½ × {r**2} × {math.sin(theta_rad):.4f} = {luas_segitiga:.2f}</p>
                 <br>
-                <p><strong>Langkah 3:</strong> Hitung Luas Tembereng</p>
-                <p>Luas Tembereng = {luas_juring:.2f} - {luas_segitiga:.2f}</p>
-                <h3>Luas Tembereng = {luas_tembereng:.2f} satuan luas</h3>
+                <p style="color:#000000;"><strong>Langkah 3:</strong> Hitung Luas Tembereng</p>
+                <p style="color:#000000;">Luas Tembereng = {luas_juring:.2f} - {luas_segitiga:.2f}</p>
+                <h3 style="color:#000000;">Luas Tembereng = {luas_tembereng:.2f} satuan luas</h3>
             </div>
             """, unsafe_allow_html=True)
             st.pyplot(draw_tembereng(r, theta))
@@ -713,41 +713,41 @@ elif st.session_state.current_slide == 'tembereng':
 
 # ==================== 5. JARI-JARI LINGKARAN ====================
 elif st.session_state.current_slide == 'jari_jari':
-    st.markdown('<h2 class="component-title">📏 5. Jari-Jari Lingkaran</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="component-title" style="color:#000000;">📏 5. Jari-Jari Lingkaran</h2>', unsafe_allow_html=True)
     
     col1, col2 = st.columns([1, 1])
     
     with col1:
         st.markdown("""
         <div class="formula-box">
-            <h4>📖 Definisi dan Rumus Jari-Jari:</h4>
-            <p><strong>Jari-jari (r)</strong> adalah jarak dari pusat lingkaran ke tepi lingkaran.</p>
+            <h4 style="color:#000000;">📖 Definisi dan Rumus Jari-Jari:</h4>
+            <p style="color:#000000;"><strong>Jari-jari (r)</strong> adalah jarak dari pusat lingkaran ke tepi lingkaran.</p>
             <h3 style="text-align: center; color: #1565C0;">
                 r = d / 2
             </h3>
-            <p>atau</p>
+            <p style="color:#000000;">atau</p>
             <h3 style="text-align: center; color: #1565C0;">
                 r = √(L / π)
             </h3>
-            <p>atau</p>
+            <p style="color:#000000;">atau</p>
             <h3 style="text-align: center; color: #1565C0;">
                 r = K / (2 × π)
             </h3>
-            <p><strong>Keterangan:</strong></p>
+            <p style="color:#000000;"><strong>Keterangan:</strong></p>
             <ul>
-                <li><strong>r</strong> = Jari-jari lingkaran</li>
-                <li><strong>d</strong> = Diameter lingkaran</li>
-                <li><strong>L</strong> = Luas lingkaran</li>
-                <li><strong>K</strong> = Keliling lingkaran</li>
-                <li><strong>π</strong> = 3.14 atau 22/7</li>
+                <li style="color:#000000;"><strong>r</strong> = Jari-jari lingkaran</li>
+                <li style="color:#000000;"><strong>d</strong> = Diameter lingkaran</li>
+                <li style="color:#000000;"><strong>L</strong> = Luas lingkaran</li>
+                <li style="color:#000000;"><strong>K</strong> = Keliling lingkaran</li>
+                <li style="color:#000000;"><strong>π</strong> = 3.14 atau 22/7</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
         
         st.markdown("""
         <div class="info-box">
-            <h4>💡 Fakta Menarik:</h4>
-            <p>Jari-jari adalah <strong>setengah</strong> dari diameter. Semua jari-jari dalam satu lingkaran memiliki panjang yang sama!</p>
+            <h4 style="color:#000000;">💡 Fakta Menarik:</h4>
+            <p style="color:#000000;">Jari-jari adalah <strong>setengah</strong> dari diameter. Semua jari-jari dalam satu lingkaran memiliki panjang yang sama!</p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -762,10 +762,10 @@ elif st.session_state.current_slide == 'jari_jari':
                 r = d / 2
                 st.markdown(f"""
                 <div class="result-box">
-                    <h4>✅ Hasil Perhitungan:</h4>
-                    <p>r = d / 2</p>
-                    <p>r = {d} / 2</p>
-                    <h3>r = {r:.2f} satuan panjang</h3>
+                    <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                    <p style="color:#000000;">r = d / 2</p>
+                    <p style="color:#000000;">r = {d} / 2</p>
+                    <h3 style="color:#1565C0;">r = {r:.2f} satuan panjang</h3>
                 </div>
                 """, unsafe_allow_html=True)
                 st.pyplot(draw_circle_with_radius(r))
@@ -776,11 +776,11 @@ elif st.session_state.current_slide == 'jari_jari':
                 r = math.sqrt(L / math.pi)
                 st.markdown(f"""
                 <div class="result-box">
-                    <h4>✅ Hasil Perhitungan:</h4>
-                    <p>r = √(L / π)</p>
-                    <p>r = √({L} / {math.pi:.5f})</p>
-                    <p>r = √{L/math.pi:.2f}</p>
-                    <h3>r = {r:.2f} satuan panjang</h3>
+                    <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                    <p style="color:#000000;">r = √(L / π)</p>
+                    <p style="color:#000000;">r = √({L} / {math.pi:.5f})</p>
+                    <p style="color:#000000;">r = √{L/math.pi:.2f}</p>
+                    <h3 style="color:#1565C0;">r = {r:.2f} satuan panjang</h3>
                 </div>
                 """, unsafe_allow_html=True)
                 st.pyplot(draw_circle_with_radius(r))
@@ -791,11 +791,11 @@ elif st.session_state.current_slide == 'jari_jari':
                 r = K / (2 * math.pi)
                 st.markdown(f"""
                 <div class="result-box">
-                    <h4>✅ Hasil Perhitungan:</h4>
-                    <p>r = K / (2 × π)</p>
-                    <p>r = {K} / (2 × {math.pi:.5f})</p>
-                    <p>r = {K} / {2*math.pi:.5f}</p>
-                    <h3>r = {r:.2f} satuan panjang</h3>
+                    <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                    <p style="color:#000000;">r = K / (2 × π)</p>
+                    <p style="color:#000000;">r = {K} / (2 × {math.pi:.5f})</p>
+                    <p style="color:#000000;">r = {K} / {2*math.pi:.5f}</p>
+                    <h3 style="color:#1565C0;">r = {r:.2f} satuan panjang</h3>
                 </div>
                 """, unsafe_allow_html=True)
                 st.pyplot(draw_circle_with_radius(r))
@@ -822,41 +822,41 @@ elif st.session_state.current_slide == 'jari_jari':
 
 # ==================== 6. DIAMETER LINGKARAN ====================
 elif st.session_state.current_slide == 'diameter':
-    st.markdown('<h2 class="component-title">➖ 6. Diameter Lingkaran</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="component-title" style="color:#000000;">➖ 6. Diameter Lingkaran</h2>', unsafe_allow_html=True)
     
     col1, col2 = st.columns([1, 1])
     
     with col1:
         st.markdown("""
         <div class="formula-box">
-            <h4>📖 Definisi dan Rumus Diameter:</h4>
-            <p><strong>Diameter (d)</strong> adalah garis lurus yang menghubungkan dua titik pada lingkaran dan melalui pusat lingkaran.</p>
+            <h4 style="color:#000000;">📖 Definisi dan Rumus Diameter:</h4>
+            <p style="color:#000000;"><strong>Diameter (d)</strong> adalah garis lurus yang menghubungkan dua titik pada lingkaran dan melalui pusat lingkaran.</p>
             <h3 style="text-align: center; color: #1565C0;">
                 d = 2 × r
             </h3>
-            <p>atau</p>
+            <p style="color:#000000;">atau</p>
             <h3 style="text-align: center; color: #1565C0;">
                 d = K / π
             </h3>
-            <p>atau</p>
+            <p style="color:#000000;">atau</p>
             <h3 style="text-align: center; color: #1565C0;">
                 d = 2 × √(L / π)
             </h3>
-            <p><strong>Keterangan:</strong></p>
+            <p style="color:#000000;"><strong>Keterangan:</strong></p>
             <ul>
-                <li><strong>d</strong> = Diameter lingkaran</li>
-                <li><strong>r</strong> = Jari-jari lingkaran</li>
-                <li><strong>L</strong> = Luas lingkaran</li>
-                <li><strong>K</strong> = Keliling lingkaran</li>
-                <li><strong>π</strong> = 3.14 atau 22/7</li>
+                <li style="color:#000000;"><strong>d</strong> = Diameter lingkaran</li>
+                <li style="color:#000000;"><strong>r</strong> = Jari-jari lingkaran</li>
+                <li style="color:#000000;"><strong>L</strong> = Luas lingkaran</li>
+                <li style="color:#000000;"><strong>K</strong> = Keliling lingkaran</li>
+                <li style="color:#000000;"><strong>π</strong> = 3.14 atau 22/7</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
         
         st.markdown("""
         <div class="info-box">
-            <h4>💡 Fakta Menarik:</h4>
-            <p>Diameter adalah <strong>garis terpanjang</strong> yang dapat ditarik dalam lingkaran. Diameter = 2 × Jari-jari</p>
+            <h4 style="color:#000000;">💡 Fakta Menarik:</h4>
+            <p style="color:#000000;">Diameter adalah <strong>garis terpanjang</strong> yang dapat ditarik dalam lingkaran. Diameter = 2 × Jari-jari</p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -871,10 +871,10 @@ elif st.session_state.current_slide == 'diameter':
                 d = 2 * r
                 st.markdown(f"""
                 <div class="result-box">
-                    <h4>✅ Hasil Perhitungan:</h4>
-                    <p>d = 2 × r</p>
-                    <p>d = 2 × {r}</p>
-                    <h3>d = {d:.2f} satuan panjang</h3>
+                    <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                    <p style="color:#000000;">d = 2 × r</p>
+                    <p style="color:#000000;">d = 2 × {r}</p>
+                    <h3 style="color:#1565C0;">d = {d:.2f} satuan panjang</h3>
                 </div>
                 """, unsafe_allow_html=True)
                 st.pyplot(draw_circle_with_diameter(d))
@@ -885,12 +885,12 @@ elif st.session_state.current_slide == 'diameter':
                 d = 2 * math.sqrt(L / math.pi)
                 st.markdown(f"""
                 <div class="result-box">
-                    <h4>✅ Hasil Perhitungan:</h4>
-                    <p>d = 2 × √(L / π)</p>
-                    <p>d = 2 × √({L} / {math.pi:.5f})</p>
-                    <p>d = 2 × √{L/math.pi:.2f}</p>
-                    <p>d = 2 × {math.sqrt(L/math.pi):.2f}</p>
-                    <h3>d = {d:.2f} satuan panjang</h3>
+                    <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                    <p style="color:#000000;">d = 2 × √(L / π)</p>
+                    <p style="color:#000000;">d = 2 × √({L} / {math.pi:.5f})</p>
+                    <p style="color:#000000;">d = 2 × √{L/math.pi:.2f}</p>
+                    <p style="color:#000000;">d = 2 × {math.sqrt(L/math.pi):.2f}</p>
+                    <h3 style="color:#1565C0;">d = {d:.2f} satuan panjang</h3>
                 </div>
                 """, unsafe_allow_html=True)
                 st.pyplot(draw_circle_with_diameter(d))
@@ -901,10 +901,10 @@ elif st.session_state.current_slide == 'diameter':
                 d = K / math.pi
                 st.markdown(f"""
                 <div class="result-box">
-                    <h4>✅ Hasil Perhitungan:</h4>
-                    <p>d = K / π</p>
-                    <p>d = {K} / {math.pi:.5f}</p>
-                    <h3>d = {d:.2f} satuan panjang</h3>
+                    <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                    <p style="color:#000000;">d = K / π</p>
+                    <p style="color:#000000;">d = {K} / {math.pi:.5f}</p>
+                    <h3 style="color:#1565C0;">d = {d:.2f} satuan panjang</h3>
                 </div>
                 """, unsafe_allow_html=True)
                 st.pyplot(draw_circle_with_diameter(d))
@@ -931,35 +931,35 @@ elif st.session_state.current_slide == 'diameter':
 
 # ==================== 7. BUSUR LINGKARAN ====================
 elif st.session_state.current_slide == 'busur':
-    st.markdown('<h2 class="component-title">〰️ 7. Busur Lingkaran</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="component-title" style="color:#000000;">〰️ 7. Busur Lingkaran</h2>', unsafe_allow_html=True)
     
     col1, col2 = st.columns([1, 1])
     
     with col1:
         st.markdown("""
         <div class="formula-box">
-            <h4>📖 Rumus Panjang Busur Lingkaran:</h4>
+            <h4 style="color:#000000;">📖 Rumus Panjang Busur Lingkaran:</h4>
             <h3 style="text-align: center; color: #1565C0;">
                 Panjang Busur = (θ/360°) × 2 × π × r
             </h3>
-            <p>atau</p>
+            <p style="color:#000000;">atau</p>
             <h3 style="text-align: center; color: #1565C0;">
                 Panjang Busur = (θ/360°) × Keliling Lingkaran
             </h3>
-            <p><strong>Keterangan:</strong></p>
+            <p style="color:#000000;"><strong>Keterangan:</strong></p>
             <ul>
-                <li><strong>Panjang Busur</strong> = Panjang lengkung busur</li>
-                <li><strong>θ (theta)</strong> = Sudut pusat dalam derajat</li>
-                <li><strong>r</strong> = Jari-jari lingkaran</li>
-                <li><strong>π</strong> = 3.14 atau 22/7</li>
+                <li style="color:#000000;"><strong>Panjang Busur</strong> = Panjang lengkung busur</li>
+                <li style="color:#000000;"><strong>θ (theta)</strong> = Sudut pusat dalam derajat</li>
+                <li style="color:#000000;"><strong>r</strong> = Jari-jari lingkaran</li>
+                <li style="color:#000000;"><strong>π</strong> = 3.14 atau 22/7</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
         
         st.markdown("""
         <div class="info-box">
-            <h4>💡 Penjelasan:</h4>
-            <p><strong>Busur</strong> adalah bagian lengkung dari keliling lingkaran yang dibatasi oleh dua titik pada lingkaran.</p>
+            <h4 style="color:#000000;">💡 Penjelasan:</h4>
+            <p style="color:#000000;"><strong>Busur</strong> adalah bagian lengkung dari keliling lingkaran yang dibatasi oleh dua titik pada lingkaran.</p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -974,14 +974,14 @@ elif st.session_state.current_slide == 'busur':
             keliling_penuh = 2 * math.pi * r
             st.markdown(f"""
             <div class="result-box">
-                <h4>✅ Hasil Perhitungan:</h4>
-                <p>Panjang Busur = (θ/360°) × 2 × π × r</p>
-                <p>Panjang Busur = ({theta}/360) × 2 × {math.pi:.5f} × {r}</p>
-                <p>Panjang Busur = {(theta/360):.4f} × {keliling_penuh:.2f}</p>
-                <h3>Panjang Busur = {panjang_busur:.2f} satuan panjang</h3>
+                <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                <p style="color:#000000;">Panjang Busur = (θ/360°) × 2 × π × r</p>
+                <p style="color:#000000;">Panjang Busur = ({theta}/360) × 2 × {math.pi:.5f} × {r}</p>
+                <p style="color:#000000;">Panjang Busur = {(theta/360):.4f} × {keliling_penuh:.2f}</p>
+                <h3 style="color:#1565C0;">Panjang Busur = {panjang_busur:.2f} satuan panjang</h3>
                 <hr>
-                <p><strong>Keliling Lingkaran Penuh:</strong> {keliling_penuh:.2f}</p>
-                <p><strong>Perbandingan:</strong> {theta}/360 = {(theta/360)*100:.1f}% dari keliling penuh</p>
+                <p style="color:#000000;"><strong>Keliling Lingkaran Penuh:</strong> {keliling_penuh:.2f}</p>
+                <p style="color:#000000;"><strong>Perbandingan:</strong> {theta}/360 = {(theta/360)*100:.1f}% dari keliling penuh</p>
             </div>
             """, unsafe_allow_html=True)
             st.pyplot(draw_busur(r, theta))
@@ -1008,36 +1008,36 @@ elif st.session_state.current_slide == 'busur':
 
 # ==================== 8. TALI BUSUR LINGKARAN ====================
 elif st.session_state.current_slide == 'tali_busur':
-    st.markdown('<h2 class="component-title">➖ 8. Tali Busur Lingkaran</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 class="component-title" style="color:#000000;">➖ 8. Tali Busur Lingkaran</h2>', unsafe_allow_html=True)
     
     col1, col2 = st.columns([1, 1])
     
     with col1:
         st.markdown("""
         <div class="formula-box">
-            <h4>📖 Rumus Panjang Tali Busur:</h4>
+            <h4 style="color:#000000;">📖 Rumus Panjang Tali Busur:</h4>
             <h3 style="text-align: center; color: #1565C0;">
                 Panjang Tali Busur = 2 × r × sin(θ/2)
             </h3>
-            <p>atau</p>
+            <p style="color:#000000;">atau</p>
             <h3 style="text-align: center; color: #1565C0;">
                 t = 2 × √(r² - a²)
             </h3>
-            <p><em>(jika diketahui jarak dari pusat ke tali busur = a)</em></p>
-            <p><strong>Keterangan:</strong></p>
+            <p style="color:#000000;"><em>(jika diketahui jarak dari pusat ke tali busur = a)</em></p>
+            <p style="color:#000000;"><strong>Keterangan:</strong></p>
             <ul>
-                <li><strong>t</strong> = Panjang tali busur</li>
-                <li><strong>r</strong> = Jari-jari lingkaran</li>
-                <li><strong>θ</strong> = Sudut pusat dalam derajat</li>
-                <li><strong>a</strong> = Jarak dari pusat ke tali busur</li>
+                <li style="color:#000000;"><strong>t</strong> = Panjang tali busur</li>
+                <li style="color:#000000;"><strong>r</strong> = Jari-jari lingkaran</li>
+                <li style="color:#000000;"><strong>θ</strong> = Sudut pusat dalam derajat</li>
+                <li style="color:#000000;"><strong>a</strong> = Jarak dari pusat ke tali busur</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
         
         st.markdown("""
         <div class="info-box">
-            <h4>💡 Penjelasan:</h4>
-            <p><strong>Tali Busur</strong> adalah garis lurus yang menghubungkan dua titik pada lingkaran. Tali busur tidak melalui pusat lingkaran (kecuali jika sudut = 180°, maka tali busur = diameter).</p>
+            <h4 style="color:#000000;">💡 Penjelasan:</h4>
+            <p style="color:#000000;"><strong>Tali Busur</strong> adalah garis lurus yang menghubungkan dua titik pada lingkaran. Tali busur tidak melalui pusat lingkaran (kecuali jika sudut = 180°, maka tali busur = diameter).</p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -1056,12 +1056,12 @@ elif st.session_state.current_slide == 'tali_busur':
                 
                 st.markdown(f"""
                 <div class="result-box">
-                    <h4>✅ Hasil Perhitungan:</h4>
-                    <p>Panjang Tali Busur = 2 × r × sin(θ/2)</p>
-                    <p>Panjang Tali Busur = 2 × {r} × sin({theta}°/2)</p>
-                    <p>Panjang Tali Busur = 2 × {r} × sin({theta/2}°)</p>
-                    <p>Panjang Tali Busur = 2 × {r} × {math.sin(theta_rad/2):.4f}</p>
-                    <h3>Panjang Tali Busur = {panjang_tali:.2f} satuan panjang</h3>
+                    <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                    <p style="color:#000000;">Panjang Tali Busur = 2 × r × sin(θ/2)</p>
+                    <p style="color:#000000;">Panjang Tali Busur = 2 × {r} × sin({theta}°/2)</p>
+                    <p style="color:#000000;">Panjang Tali Busur = 2 × {r} × sin({theta/2}°)</p>
+                    <p style="color:#000000;">Panjang Tali Busur = 2 × {r} × {math.sin(theta_rad/2):.4f}</p>
+                    <h3 style="color:#1565C0;">Panjang Tali Busur = {panjang_tali:.2f} satuan panjang</h3>
                 </div>
                 """, unsafe_allow_html=True)
                 st.pyplot(draw_tali_busur(r, theta))
@@ -1075,13 +1075,13 @@ elif st.session_state.current_slide == 'tali_busur':
                 
                 st.markdown(f"""
                 <div class="result-box">
-                    <h4>✅ Hasil Perhitungan:</h4>
-                    <p>Panjang Tali Busur = 2 × √(r² - a²)</p>
-                    <p>Panjang Tali Busur = 2 × √({r}² - {a}²)</p>
-                    <p>Panjang Tali Busur = 2 × √({r**2} - {a**2})</p>
-                    <p>Panjang Tali Busur = 2 × √{r**2 - a**2}</p>
-                    <p>Panjang Tali Busur = 2 × {math.sqrt(r**2 - a**2):.4f}</p>
-                    <h3>Panjang Tali Busur = {panjang_tali:.2f} satuan panjang</h3>
+                    <h4 style="color:#000000;">✅ Hasil Perhitungan:</h4>
+                    <p style="color:#000000;">Panjang Tali Busur = 2 × √(r² - a²)</p>
+                    <p style="color:#000000;">Panjang Tali Busur = 2 × √({r}² - {a}²)</p>
+                    <p style="color:#000000;">Panjang Tali Busur = 2 × √({r**2} - {a**2})</p>
+                    <p style="color:#000000;">Panjang Tali Busur = 2 × √{r**2 - a**2}</p>
+                    <p style="color:#000000;">Panjang Tali Busur = 2 × {math.sqrt(r**2 - a**2):.4f}</p>
+                    <h3 style="color:#1565C0;">Panjang Tali Busur = {panjang_tali:.2f} satuan panjang</h3>
                 </div>
                 """, unsafe_allow_html=True)
                 
